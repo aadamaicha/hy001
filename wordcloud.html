@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>民族数据分析</title>
+
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="static/css/style-liberty.css">
+
+</head>
+
+<body>
+
+
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+            <h1>
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-lightbulb"></span> 民族数据分析
+                </a>
+            </h1>
+            <!-- if logo is image enable this
+            <a class="navbar-brand" href="#index.html">
+                <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+            </a> -->
+            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="wordcloud.html">词云分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trend.html">趋势分析</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="theme.html">主题分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="timeline.html">时间分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">情感分析</a>
+                    </li>
+
+                    <!--/search-right-->
+                    <ul class="header-search">
+                        <li class="nav-item search-right">
+                            <a href="#search" class="btn search-btn btn-light" title="search"><span class="fas fa-search" aria-hidden="true"></span></a>
+                            <!-- search popup -->
+                            <div id="search" class="pop-overlay">
+                                <div class="popup">
+                                    <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
+                                    <form action="#" method="GET" class="search-box d-sm-flex position-relative">
+                                        <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
+                                        <button type="submit" class="btn btn-style btn-primary"> Search</button>
+                                    </form>
+                                </div>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                            <!-- /search popup -->
+                        </li>
+                    </ul>
+                    <!--//search-right-->
+                </ul>
+            </div>
+            <!-- search button -->
+
+            <!-- //search button -->
+
+            <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+        </nav>
+    </div>
+</header>
+<!--//header-->
+
+
+<!-- about banner -->
+<section class="w3l-about-breadcrumb text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="banner-info-grid px-md-5">
+                <h2 class="w3l-title-breadcrumb mb-3">词云分析</h2>
+                <p class="inner-page-para px-lg-5">根据一段文字里的关键词出现频率生成文字的图片组合分析，字体越大说明对应的词汇的频率越高！</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about banner -->
+
+
+ <div class="content">
+                    <img src="static/images/阿昌族词云图.png" alt="" class="img-fluid" />
+ </div>
+
+
+ <table class="table table-responsive-md" >
+     <thead>
+    <tr style="text-align: center">
+      <th>排序</th>
+      <th>标签词</th>
+      <th>词频</th>
+      <th>文档频率</th>
+      <th>词性</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="text-align: center">
+      <td>1</td>
+      <td>阿昌族</td>
+      <td>5296</td>
+      <td>3620</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>2</td>
+      <td>云南</td>
+      <td>2776</td>
+      <td>1450</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>3</td>
+      <td>民族</td>
+      <td>2516</td>
+      <td>1343</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>4</td>
+      <td>文化</td>
+      <td>1096</td>
+      <td>548</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>5</td>
+      <td>陇川</td>
+      <td>791</td>
+      <td>510</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>6</td>
+      <td>过手</td>
+      <td>746</td>
+      <td>452</td>
+      <td>动词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>7</td>
+      <td>泼水节</td>
+      <td>705</td>
+      <td>235</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>8</td>
+      <td>中国</td>
+      <td>690</td>
+      <td>448</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>9</td>
+      <td>保山</td>
+      <td>680</td>
+      <td>286</td>
+      <td>名词</td>
+    </tr>
+    <tr style="text-align: center">
+      <td>10</td>
+      <td>节日</td>
+      <td>613</td>
+      <td>416</td>
+      <td>名词</td>
+    </tr>
+  </tbody>
+     </table>
+
+
+<!-- About Section -->
+<section class="w3l-content-6" id="skills">
+    <div class="content-6-mian py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="content-info-in row">
+                <div class="content-gd col-lg-6 pe-lg-5">
+                    <img src="static/images/阿昌族5.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="content-gd col-lg-6 mt-lg-0 mt-5 align-self ps-lg-5">
+                    <h6 class="w3l-title-small mb-1">少数民族图鉴</h6>
+                    <h3 class="w3l-title-main mb-lg-4 mb-3">阿昌族词云图</h3>
+                    <p class="my-4 pe-lg-5">通过采集微博中关键词为阿昌族的博文，我们可以获得以上的词云图和词频统计表格。与阿昌族有关的关键词包括：地理位置、文化、中国等内容。其中与地理位置相关的关键词最多，排名前十的关键词中，与地理环境有关的就有四个。由此我们可以窥探地理环境对阿昌族的巨大影响。</p>
+                    <h5 class="w3l-subtitle mb-md-5 mb-4">中国、云南、陇川、保山</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+
+
+<!-- footer block -->
+
+            <!-- copyright -->
+            <p class="copy-footer-29 text-center mt-5 pb-2">© 2022 胡玥22301257 All rights reserved.</p>
+            <!-- //copyright -->
+        </div>
+    </div>
+</footer>
+<!-- //footer block -->
+
+
+
+
+<!-- Js scripts -->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- //move top -->
+
+<!-- common jquery plugin -->
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<!-- //common jquery plugin -->
+
+<!-- theme switch js (light and dark)-->
+<script src="static/js/theme-change.js"></script>
+<!-- //theme switch js (light and dark)-->
+
+<!--/stats-number-counter-->
+<script src="static/js/jquery.waypoints.min.js"></script>
+<script src="static/js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+
+</script>
+<!--//stats-number-counter-->
+
+<!--/owlcarousel-->
+<script src="static/js/owl.carousel.js"></script>
+<!-- //tesimonials-->
+<script>
+    $(document).ready(function() {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                736: {
+                    items: 1,
+                    nav: false
+                }
+            }
+        })
+    })
+
+</script>
+<!-- //tesimonials-->
+
+<!-- magnific popup -->
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+</script>
+<!-- //magnific popup -->
+
+<!-- MENU-JS -->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!-- //MENU-JS -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<!--bootstrap-->
+<script src="static/js/bootstrap.min.js"></script>
+<!-- //bootstrap-->
+<!-- //Js scripts -->
+
+</body>
+
+</html>
